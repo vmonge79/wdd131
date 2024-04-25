@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+footer {
+    color: white;
+    background-color: rgb(67, 63, 63);
+    height: 100px;
+}
+
+body nav ul {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 40px;
+}
+
+body nav ul li a {
+    text-decoration: none;
+    color: white;
+    size: 24px;
+}
+
+footer {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "main main main aside";
+    grid-row: 1fr;
+    size: 20px
+}
+
+main .main {
+    grid-area: main;
+    background-color: rgb(185, 181, 181);
+    height: 400px
+
+}
+
+main .aside {
+grid-area: aside;
+    background-color: white;
+    color: black;
+
+}
