@@ -23,7 +23,7 @@ body nav ul {
 body nav ul li a {
     text-decoration: none;
     color: white;
-    resize: 24px;
+    font-size: 24px;
 }
 
 
@@ -32,7 +32,7 @@ main {
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
         "main main main aside";
-    resize: 20px
+    font-size;: 20px
 }
 
 p {
