@@ -23,20 +23,22 @@ body nav ul {
 body nav ul li a {
     text-decoration: none;
     color: white;
-    size: 24px;
+    resize: 24px;
 }
 
-footer {
-    text-align: center;
-}
 
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "main main main aside";
-    grid-row: 1fr;
-    size: 20px
+    resize: 20px
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
 }
 
 main .main {
@@ -48,8 +50,20 @@ main .main {
 }
 
 main .aside {
-grid-area: aside;
+    grid-area: aside;
     background-color: white;
     color: rgb(60, 59, 59);
 
+}
+
+body section img {
+    height: 50px;
+    width: 50px;
+    
+    
+
+}
+
+footer {
+    text-align: center;
 }
