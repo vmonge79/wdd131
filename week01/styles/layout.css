@@ -42,13 +42,14 @@ main {
 main .main {
     grid-area: main;
     background-color: rgb(185, 181, 181);
-    height: 400px
+    height: 400px;
+    color: rgb(60, 59, 59);
 
 }
 
 main .aside {
 grid-area: aside;
     background-color: white;
-    color: black;
+    color: rgb(60, 59, 59);
 
 }
