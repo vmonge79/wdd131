@@ -116,8 +116,10 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
-    justify-content: center;
+    height:auto;
     align-content: center;
+    margin: auto;
+    max-width: 1000px;
 
 
 
@@ -140,7 +142,8 @@ main section div ul li a {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    column-gap: 12px;
+    row-gap: 20px;
     grid-template-areas:
         "about about about"
         "p1 p1 img1"
@@ -161,6 +164,7 @@ main section div ul li a {
 
 .p2 {
     grid-area: p2;
+    margin-bottom: 20px;
 }
 
 .img1 {
@@ -177,6 +181,7 @@ main section div ul li a {
 
 .flag {
     grid-area: flag;
+    margin-bottom: 20px;
 
 }
 
@@ -197,3 +202,4 @@ footer p {
     margin: 8px 0px 8px 0px;
     text-align: center;
 }
+
