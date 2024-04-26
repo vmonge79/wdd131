@@ -72,12 +72,12 @@ body header div nav ul li a {
 
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     font-size: 1.3em;
 
 }
 
-main section div ul li a:hover{
+main section div ul li a:hover {
     font-size: 1.2em;
 
 }
@@ -109,18 +109,21 @@ img {
     border: solid 2px;
     color: gray;
     margin: 15px 5px 15px 5px;
-    
+
 }
 
 main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
-   
+    justify-content: center;
+    align-content: center;
+
+
 
 }
 
-main section div ul li{
+main section div ul li {
     font-family: "Roboto", sans-serif;
     font-size: 17px;
     font-weight: 200;
@@ -128,24 +131,24 @@ main section div ul li{
     margin-left: 40px;
 }
 
-main section div ul li a{
+main section div ul li a {
     align-items: center;
-    
+
 }
 
 .grid2 {
-    display:grid;
+    display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
-    grid-template-areas: 
-    "about about about"
-    "p1 p1 img1"
-    "p1 p1 img1"
-    "sj sj sj"
-    "img2 p2 p2"
-    "img2 p2 p2"
-    "flag p2 p2";
+    grid-template-areas:
+        "about about about"
+        "p1 p1 img1"
+        "p1 p1 img1"
+        "sj sj sj"
+        "img2 p2 p2"
+        "img2 p2 p2"
+        "flag p2 p2";
 }
 
 .about {
@@ -174,6 +177,7 @@ main section div ul li a{
 
 .flag {
     grid-area: flag;
+
 }
 
 
@@ -184,6 +188,12 @@ footer {
     font-weight: lighter;
     font-size: 14px;
     height: 60px;
-    text-align: center;
+    justify-content: center;
+    display: flex;
 
+}
+
+footer p {
+    margin: 8px 0px 8px 0px;
+    text-align: center;
 }
