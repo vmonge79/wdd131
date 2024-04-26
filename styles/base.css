@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(28, 57, 101);
+    text-align: center;
+    height: 80px;
+    padding: 30px;
+    font-size: 30px;
+
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(28, 57, 101);
+    text-align: center;
+    height: 60px;
+    padding: 12px;
+    font-size: 25px;
+
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    color: rgb(45, 45, 45);
+    text-align: center;
+    height: 20px;
+    font-size: 22px;
+    padding: 8px;
+
+}
+
+h4 {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    color: rgb(45, 45, 45);
+    text-align: center;
+    height: 20px;
+    font-size: 16px;
+    padding: 8px;
+
+}
+
+body header div nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: rgb(45, 45, 45);
+    height: 50px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+body header div nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+
+nav ul li a:hover{
+    font-size: 1.3em;
+
+}
+
+main section div ul li a:hover{
+    font-size: 1.2em;
+
+}
+
+main section div ul {
+    margin-top: 30px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    padding: 12px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    box-shadow: 10px 10px 5px -6px rgba(120, 113, 113, 0.75);
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(120, 113, 113, 0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(120, 113, 113, 0.75);
+    border-radius: 5px;
+    margin: 12px;
+
+}
+
+.card {
+    border-radius: 10px;
+    border: solid 2px;
+    color: gray;
+    margin: 15px 5px 15px 5px;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+   
+
+}
+
+main section div ul li{
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+main section div ul li a{
+    align-items: center;
+    
+}
+
+.grid2 {
+    display:grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    grid-template-areas: 
+    "about about about"
+    "p1 p1 img1"
+    "p1 p1 img1"
+    "sj sj sj"
+    "img2 p2 p2"
+    "img2 p2 p2"
+    "flag p2 p2";
+}
+
+.about {
+    grid-area: about;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.sj {
+    grid-area: sj;
+}
+
+.flag {
+    grid-area: flag;
+}
+
+
+footer {
+    background-color: rgb(28, 57, 101);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    height: 60px;
+    text-align: center;
+
+}
