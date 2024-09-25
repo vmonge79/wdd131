@@ -7,16 +7,16 @@ header, main, footer {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    background-color: coral;
+    background-color: rgb(40, 17, 208);
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem
+    grid-gap: 1rem
 }
 
 section {
     background-color: ivory;
-    padding: 5px;
+    padding: 1rem;
 }
