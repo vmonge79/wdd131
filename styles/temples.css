@@ -82,12 +82,13 @@ footer .foot2 {
     align-items: center;
     margin: 0.5rem;
     padding: 0.5rem;
+}
 
-    footer p {
-        margin: 0.5rem;
-        padding: 0.5rem;
-        line-height: 2;
-    }
+footer p {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    line-height: 2;
+}
 
 #menu {
     display: block;
