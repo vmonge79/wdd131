@@ -29,10 +29,9 @@ nav {
     border: 0;
     background: none;
     color: #000;
-    position: sticky;
-    top:1rem;
+    position: absolute;
+    top: 1rem;
     right: 1rem;
-   
 }
 
 #menu::before {
@@ -40,7 +39,7 @@ nav {
 }
 
 #menu.open::before {
-    content: "🌙";
+    content: "❎";
 }
 
 .navigation {
@@ -76,12 +75,11 @@ nav {
 }
 
 .stuff {
-    margin: .5m;
-    border: 1px solid rgba(0, 0, 0, .1);
+    margin: 0.5m;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #bed;
     max-width: 580px;
     height: 100vh;
-
 }
 
 /* large view navigation ************************************/
