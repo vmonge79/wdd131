@@ -14,3 +14,8 @@ li.append(deleteButton);
 
 list.append(li);
 
+button.addEventListener('click', function () {
+    // Code to execute when the button is clicked
+});
+
+
