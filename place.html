@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Viviana Monge - Place - Costa Rica">
+    <meta name="author" content="Viviana Monge">
+    <title>WDD 131 - Dynamic Web Fundamentals - Viviana Monge M.</title>
+    <link href="/styles/place.css" rel="stylesheet">
+    <script src="/scripts/place.js" defer=""></script>
+    <script src="/scripts/getdates.js" defer=""></script>
+</head>
+
+<body>
+    <header>
+        <h1>Costa Rica</h1>
+    </header>
+    <div class="header1"></div>
+    <div class="header2"></div>
+
+    <main>
+        <section class="main">
+            <div>
+                <picture>
+                    <source media="(max-width: 799px)" srcset="/images/sloth-vertical.webp"/>
+                    <source media="(min-width:800px)" srcset="/images/sloth-horizontal.webp" />
+                    <img src = "" alt="Costarican National Symbol SLOTH" />
+                </picture>
+            </div>
+            <div class="data">
+                <table>
+                    <caption>Data</caption>
+                    <tr>
+                        <td>Area:</td>
+                        <td>51.100 sq km</td>
+                    </tr>
+                    <tr>
+                        <td>Population:</td>
+                        <td>5.246.714</td>
+                    </tr>
+                    <tr>
+                        <td>Capital:</td>
+                        <td>San José</td>
+                    </tr>
+                    <tr>
+                        <td>Language:</td>
+                        <td>Español</td>
+                    </tr>
+                    <tr>
+                        <td>Currency:</td>
+                        <td>CRC Colones</td>
+                    </tr>
+                    <tr>
+                        <td>Time Zone:</td>
+                        <td>GMT -6</td>
+                    </tr>
+                    <tr>
+                        <td>Calling Code:</td>
+                        <td>+506</td>
+                    </tr>
+                    <tr>
+                        <td>Internet TLD:</td>
+                        <td>.cr</td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div>
+                <table>
+                    <caption>Weather</caption>
+                    <tr>
+                        <td>Temperature:</td>
+                        <td>25ºC</td>
+                    </tr>
+                    <tr>
+                        <td>Conditions:</td>
+                        <td>Rainy</td>
+                    </tr>
+                    <tr>
+                        <td>Wind:</td>
+                        <td>7km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill:</td>
+                        <td>23,7ºC</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <div class="bottom1"></div>
+        <div class="bottom2"></div>
+    </main>
+
+    <footer>
+       
+        <p>© <span id="year"></span></p>
+        <p>🌺 Viviana Monge M. 🌺 Costa Rica 🇨🇷 </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
