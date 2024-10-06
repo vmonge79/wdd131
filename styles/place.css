@@ -72,6 +72,12 @@ div .data {
     margin-top: 2rem;
 }
 
+caption .weather::before {
+    content: "⛈️";
+    display: inline-block;
+
+}
+
 footer {
     background-color: rgb(11, 11, 118);
     display: flex;
