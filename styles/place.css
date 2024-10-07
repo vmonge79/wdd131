@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    max-width: 500px;
+
 }
 
 h1 {
@@ -46,6 +46,7 @@ h1 {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    position: relative;
 }
 
 .hero img {
@@ -125,12 +126,18 @@ footer p {
     .main {
         border: none;
         position: relative;
+        display: block;
 
     }
 
     .hero {
         background-image: url('/images/sloth-horizontal.webp');
+        background-size: cover;
+        background-position: center;
         position: relative;
+        z-index: 0;
+        overflow: hidden;
+        height: 100vh;
     }
 
     table caption {
@@ -153,7 +160,7 @@ footer p {
         z-index: 1;
     }
 
-    .data2 {
+    .data2{
         position: absolute;
         bottom: 1rem;
         right: 1rem;

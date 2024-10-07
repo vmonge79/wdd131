@@ -11,11 +11,11 @@ lastModifiedElement.textContent = `Last modified: ${formattedDate}`;
 
 function calculateWindChill(){
     const tempElement = document.querySelector(".temp");
-    const windelement = document.querySelector(".wind");
+    const windElement = document.querySelector(".wind");
     const windChillElement = document.querySelector(".windchill");
 
     const temperature = parseFloat(tempElement.textContent);
-    const windSpeed = parseFloat(windelement);
+    const windSpeed = parseFloat(windElement.textContent);
 
     if (temperature <= 10 && windSpeed > 4.8) {
         const windChill = (    
@@ -29,10 +29,7 @@ function calculateWindChill(){
     } else {
         windChillElement.innerHTML = "N/A";
     }
-
-calculaleWindChill();
-
-
-
-
 }
+
+calculateWindChill()
+
