@@ -30,10 +30,9 @@ h1 {
 }
 
 .main {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: auto;
     margin: 0 auto;
     max-width: 1200px;
@@ -53,6 +52,16 @@ h1 {
     display: none;
 }
 
+table {
+    margin: 1rem auto;
+    width: auto;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 0.5rem;
+}
+
 table td:first-child {
     text-align: right;
 }
@@ -66,15 +75,24 @@ table caption {
     font-weight: bold;
     padding: 0.5rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
-div .data {
-    margin-top: 2rem;
+
+.data1,
+.data2 {
+    width: 100%;
 }
 
-caption .weather::before {
+div.weather {
+    display: block;
+    text-align: center;
+}
+
+div.weather::before {
     content: "⛈️";
-    display: inline-block;
+    display: block;
+    font-size: 3rem;
 
 }
 
@@ -101,15 +119,64 @@ footer p {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     .main {
         border: none;
+        position: relative;
+
     }
 
     .hero {
         background-image: url('/images/sloth-horizontal.webp');
+        position: relative;
     }
 
+    table caption {
+        background-color: rgba(255, 0, 0, 0.752);
+        color: white;
+    }
+
+    table td {
+        padding: 0;
+    }
+
+    table tr {
+        background-color: rgba(255, 255, 255, 0.361);
+    }
+
+    .data1 {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1;
+    }
+
+    .data2 {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1;
+    }
+
+    .weather {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .weather-title {
+        margin-right: 0.5rem;
+    }
+
+    div.weather {
+        display: none;
+    }
+
+    .weather-icon::after {
+        content: "⛈️";
+        display: inline-block;
+        font-size: 3rem;
+    }
 }

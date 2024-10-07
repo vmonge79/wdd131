@@ -9,7 +9,6 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Viviana Monge M.</title>
     <link href="/styles/place.css" rel="stylesheet">
     <script src="/scripts/place.js" defer=""></script>
-    <script src="/scripts/place.js" defer=""></script>
 </head>
 
 <body>
@@ -23,15 +22,15 @@
         <section class="hero">
             <div>
                 <picture>
-                    <source media="(max-width: 799px)" srcset="/images/sloth-vertical.webp"/>
+                    <source media="(max-width: 799px)" srcset="/images/sloth-vertical.webp" />
                     <source media="(min-width:800px)" srcset="/images/sloth-horizontal.webp" />
-                    <img src = "" alt="Costarican National Symbol SLOTH" />
+                    <img src="" alt="Costarican National Symbol SLOTH" />
                 </picture>
             </div>
         </section>
 
         <section class="main">
-            <div class="data">
+            <div class="data1">
                 <table>
                     <caption>Data</caption>
                     <tr>
@@ -68,13 +67,14 @@
                     </tr>
                 </table>
             </div>
-        
-            <div>
+
+            <div class="data2">
+                <div class="weather"></div>
                 <table>
-                    <caption class="weather">Weather</caption>
+                    <caption class="weather-icon">Weather</caption>
                     <tr>
                         <td>Temperature:</td>
-                        <td>25ºC</td>
+                        <td class="temp">25<span>ºC</span></td>
                     </tr>
                     <tr>
                         <td>Conditions:</td>
@@ -82,11 +82,11 @@
                     </tr>
                     <tr>
                         <td>Wind:</td>
-                        <td>7km/h</td>
+                        <td class="wind">7<span>km/h</span></td>
                     </tr>
                     <tr>
                         <td>Wind Chill:</td>
-                        <td>23,7ºC</td>
+                        <td class="windchill"></td>
                     </tr>
                 </table>
             </div>
@@ -97,8 +97,8 @@
     </main>
 
     <footer>
-       
-        <p>© <span id="year"></span></p>
+
+        <p>©<span id="year"></span></p>
         <p>🌺 Viviana Monge M. 🌺 Costa Rica 🇨🇷 </p>
         <p id="lastModified"></p>
     </footer>
