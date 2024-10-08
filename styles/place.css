@@ -99,7 +99,7 @@ div.weather {
 }
 
 div.weather::before {
-    content: "⛈️";
+    content: url("/images/weather.svg");
     display: block;
     font-size: 3rem;
 
