@@ -59,6 +59,7 @@ h1 {
 
 .hero img {
     display: none;
+    border-radius: 0%;
 }
 
 table {
