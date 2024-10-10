@@ -4,34 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="WDD 131 - Dynamic Web Fundamentals - Viviana Monge - Temples">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Viviana Monge - Temples">
     <meta name="author" content="Viviana Monge">
     <title>Responsive Practice - Temple Pictures.</title>
-    <link href="styles/filtered-temples-large.css" rel="stylesheet">
-    <link href="styles/filtered-temples.css" rel="stylesheet">
-    <script src="scripts/filtered-temples.js" defer=""></script>
+    
+    <link href="/styles/filtered-temples.css" rel="stylesheet">
+
+    <link href="/styles/filtered-temples-large.css" rel="stylesheet">
+    
+    <script src="/scripts/filtered-temples.js" defer=""></script>
 
 </head>
 
 <body>
     <header>
-        <h1>Temple Album</h1>   
+        <h1>Temple Album</h1>
         <div class="nav">
-            <a id="menu" href ="#">&#9776;</a>
+            <a id="menu" href="#">&#9776;</a>
             <nav>
                 <ul class="navigation">
                     <li><a href="">Home</a>
                     </li>
-                    <li><a href="">Old</a></li>
-                    <li><a href="">New</a></li>
-                    <li><a href=" ">Large</a></li>
-                    <li><a href=" ">Old</a></li>
+                    <li><a class="old" href="">Old</a></li>
+                    <li><a class="new" href="">New</a></li>
+                    <li><a class="large" href=" ">Large</a></li>
+                    <li><a class= "small" href="small">Small</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-   
+
 
     <main>
         <section>
@@ -39,56 +41,12 @@
                 <h2>Gallery</h2>
             </div>
 
-            <div class="Gallery">
-                <figure>   
-                    <img src="./images/temple1.jpeg" alt="Italy Temple Picture">
-                    <figcaption>Temple of Italy</figcaption>
-                </figure>
+            <div class="gallery">
 
-                <figure>
-                    <img src="./images/temple2.jpeg" alt="Panama Temple Picture">
-                    <figcaption>Temple of Panama</figcaption>
-                </figure>
-                
-                <figure>
-                    <img src="./images/temple3.jpeg" alt="Mexico Temple Picture">
-                    <figcaption>Temple of Mexico</figcaption>
-                </figure>
-                
-                <figure>
-                    <img src="./images/temple4.jpeg" alt="Washington Temple Picture">
-                    <figcaption>Temple of Washington</figcaption>
-                </figure>
-
-                
-                <figure>
-                    <img src="./images/temple5.jpeg" alt="Spain Temple Picture">
-                    <figcaption>Temple of Spain</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="./images/temple6.jpeg" alt="Nicaragua Temple Picture">
-                    <figcaption>Temple of Nicaragua</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="./images/temple7.jpeg" alt="New York Temple Picture">
-                    <figcaption>Temple of New York</figcaption>
-                </figure>
-                
-                <figure>
-                    <img src="./images/temple8.jpeg" alt="Colombia Temple Picture">
-                    <figcaption>Temple of Colombia</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="./images/temple9.jpeg" alt="Peru Temple Picture">
-                    <figcaption>Temple of Peru</figcaption>
-                </figure>    
             </div>
         </section>
 
-    
+
 
     </main>
 
@@ -98,8 +56,8 @@
         </div>
 
         <div class="foot2">
-        <p>🌺 Viviana Monge M. 🌺 Costa Rica 🇨🇷 </p>
-        <p id="lastModified"></p>
+            <p>🌺 Viviana Monge M. 🌺 Costa Rica 🇨🇷 </p>
+            <p id="lastModified"></p>
         </div>
 
     </footer>
