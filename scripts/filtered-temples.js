@@ -107,8 +107,12 @@ const temples = [
 
 createTempleCard();
 
-function createTempleCard() {
-    temples.forEach(temple => {
+function createTempleCard(filteredTemples = temples) {
+
+    const gallery = document.querySelector(".gallery");
+    gallery.innerHTML = "";
+
+    filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
@@ -135,6 +139,37 @@ function createTempleCard() {
         card.appendChild(img);
 
         document.querySelector(".gallery").appendChild(card);
-    });
+});
 
 }
+
+const oldLink = document.querySelector(".old");
+
+oldLink.addEventListener("click", () => {
+    const oldTemples = temples.filter(temple => {
+        const dedicationYr = parseInt(temple.dedicated.split(",")[0], 10);
+        return dedicationYr < 2000;
+    });
+    createTempleCard(oldTemples);
+});
+
+const newLink = document.querySelector(".new");
+newLink.addEventListener("click", () => {
+    const newTemples = temples.filter(temple => {
+        const dedicationYr = parseInt(temple.dedicated.split(",")[0], 10);
+        return dedicationYr >= 2000;
+    });
+    createTempleCard(newTemples);
+});
+
+const smallLink = document.querySelector(".small");
+smallLink.addEventListener("click", () => {
+    const smallTemples = temples.filter(temple => parseInt(temple.area) < 10000);
+    createTempleCard(smallTemples);
+});
+
+const largeLink = document.querySelector(".large");
+largeLink.addEventListener("click", () => {
+    const largeTemples = temples.filter(temple => temple.area >= 10000);
+    createTempleCard(largeTemples);
+});
