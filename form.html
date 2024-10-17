@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Viviana Monge - Form Practice">
+    <meta name="author" content="Viviana Monge">
+    <title>Form Practice - WDD131</title>
+
+    <link href="styles/form.css" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer=""></script>
+
+    <script src="scripts/form.js" defer=""></script>
+</head>
+
+<body>
+    <h1>Product Review</h1>
+    <form method="get" action="review.html" class="f1">
+        <fieldset>
+            <label>Product Name*
+                <select name="product" id="product" required>
+                    <option value="" disabled selected> Please Select &#9662;</option>
+                    <option value="product"></option>
+                </select>
+            </label>
+
+            <div id="rating"></div>
+            <label>Overall Rating*</label>
+            <label><input type="radio" name="rating" value="*" required>★</label>
+            <label><input type="radio" name=" rating" value="**">★★</label>
+            <label><input type="radio" name=" rating" value="***">★★★</label>
+            <label><input type="radio" name=" rating" value="****">★★★★</label>
+            <label><input type="radio" name=" rating" value="*****">★★★★★</label>
+
+            <div id="installdate"></div>
+            <label>Date of Installation* <input type="date" name="installdate" required</label>
+
+            <div id="feature">Which features did you find useful in the product* <em>(Check all that apply)</em>
+                
+                <label><input type="checkbox" name="design" value="yes" rquired>Design</label>
+                <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+                <label><input type="checkbox" name="Ease of Use" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="Performance" value="yes">Performance</label>
+            </div>
+
+            <div class="written">Written Review <span style="font-size: 0.8em; color: grey;">(Optional)</span>
+                <input type="text" id="written">
+            </div>
+
+                <div class="yourname">Your Name <span style="font-size: 0.8em; color: grey;">(Optional)</span>
+                    <input type="text" id="yourname">
+                </div>
+
+
+                <div id="button">
+                    <input type="submit" value="Post Review">
+                </div>
+
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>🌺 Viviana Monge M. 🌺 Costa Rica 🇨🇷 </p>
+
+        <p id="lastModified"></p>
+        <p>© <span id="year"></p>
+
+    </footer>
+
+</body>
+
+</html>

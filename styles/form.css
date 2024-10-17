@@ -1,0 +1,107 @@
+:root {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --color-blue: rgb(28, 57, 101);
+    --color-darkgray: rgb(50, 48, 48);
+    --color-lightgray: rgb(210, 202, 202);
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1, 5rem;
+    font-weight: bold;
+    background-color: var(--color-blue);
+    color: white;
+    text-align: center;
+
+}
+
+form {
+    background-color: var(--color-lightgray);
+    color: var(--color-darkgray);
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.f1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.f1 legend {
+    color: var(--color-darkgray);
+    padding: 0 .5rem;
+}
+
+.f1 label {
+    display: block;
+    padding-top: .25rem;
+    color: var(--color-darkgray);
+    font-size: .9rem;
+}
+
+.f1 div {
+    padding-top: 1rem;
+}
+
+.f1 input[type="text"] {
+    display: block;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    height: 25px;
+
+}
+
+.f1 input[type="submit"] {
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 200px;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1.25rem;
+    font-style: bold;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.f1 input[type="submit"]:hover {
+    background-color: var(--color-darkgray);
+    box-shadow: 2px 2px 6px #666;
+    cursor: pointer;
+    color: white;
+}
+
+
+footer {
+    background-color: var(--color-blue);
+    color: white;
+    font-weight: lighter;
+    font-size: 14px;
+    height: 100%;
+    justify-content: center;
+    display: block;
+
+}
+
+footer p {
+    margin: 1px 0px 2px 0px;
+    text-align: center;
+}
