@@ -1,3 +1,5 @@
+
+
 :root {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --color-blue: rgb(28, 57, 101);
@@ -97,6 +99,16 @@ form {
     display: block;
     margin: 0 auto;
 
+}
+
+.yourname, .written .check{
+    font-size: 1em;
+   
+}
+
+.optional-text, .check {
+    font-size: 0.8em;
+    color: grey;
 }
 
 
