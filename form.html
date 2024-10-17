@@ -35,28 +35,31 @@
             <label><input type="radio" name=" rating" value="*****">★★★★★</label>
 
             <div id="installdate"></div>
-            <label>Date of Installation* <input type="date" name="installdate" required</label>
+            <label>Date of Installation* <input type="date" name="installdate" required></label>
 
-            <div id="feature">Which features did you find useful in the product* <em>(Check all that apply)</em>
-                
-                <label><input type="checkbox" name="design" value="yes" rquired>Design</label>
+            <div id="feature">
+                Which features did you find useful in the product* <em>(Check all that apply)</em>
+                <label><input type="checkbox" name="design" value="yes" required>Design</label>
                 <label><input type="checkbox" name="durability" value="yes"> Durability</label>
-                <label><input type="checkbox" name="Ease of Use" value="yes">Ease of Use</label>
-                <label><input type="checkbox" name="Performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="easeOfUse" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
             </div>
 
-            <div class="written">Written Review <span style="font-size: 0.8em; color: grey;">(Optional)</span>
-                <input type="text" id="written">
+
+            <div class="written">
+                Written Review <span style="font-size: 0.8em; color: grey;">(Optional)</span>
+                <input type="text" id="written" placeholder="Write your review here...">
+            </div>
+            
+            <div class="yourname">
+                Your Name <span style="font-size: 0.8em; color: grey;">(Optional)</span>
+                <input type="text" id="yourname" placeholder="Enter your name...">
+            </div>
+            
+            <div id="button">
+                <input type="submit" value="Post Review">
             </div>
 
-                <div class="yourname">Your Name <span style="font-size: 0.8em; color: grey;">(Optional)</span>
-                    <input type="text" id="yourname">
-                </div>
-
-
-                <div id="button">
-                    <input type="submit" value="Post Review">
-                </div>
 
         </fieldset>
     </form>
