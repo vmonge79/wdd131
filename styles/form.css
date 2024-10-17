@@ -66,6 +66,16 @@ form {
 
 }
 
+.f1 textarea {
+    display: block;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    height: 50px;
+    appearance: none;
+}
+
 .f1 input[type="submit"] {
     border: none;
     background-color: white;
@@ -81,6 +91,8 @@ form {
     margin: 0 auto;
 
 }
+
+
 
 .f1 input[type="submit"]:hover {
     background-color: var(--color-darkgray);
@@ -98,6 +110,7 @@ footer {
     height: 100%;
     justify-content: center;
     display: block;
+
 
 }
 
