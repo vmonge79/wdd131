@@ -1,0 +1,64 @@
+:root {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --color-deep-purple: #3a2099;
+    --color-light-purple: #633fe7;
+    --color-royal-purple: #6A5ACD;
+    --color-silver: #868585;
+    --color-white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: var(--color-deep-purple);
+    color: white;
+    text-align: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    height: 3rem;
+    margin-top: .6rem;
+    padding-top: .5rem;
+    margin-bottom: 1.5rem;
+
+
+}
+
+h2 {
+    color: var(--color-deep-purple);
+    margin-top: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+p {
+    color: var(--color-silver);
+    font:narrow;
+
+}
+
+footer {
+    background-color: var(--color-deep-purple);
+    color: white;
+    font-weight: lighter;
+    font-size: 14px;
+    height: 100%;
+    justify-content: center;
+    display: block;
+    max-width: viewport;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+footer p {
+    margin: 1px 0px 2px 0px;
+    text-align: center;
+    color: white;
+}
