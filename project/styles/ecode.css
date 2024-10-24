@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 
@@ -117,6 +118,8 @@ header h1 img {
     background-color: var(--color-deep-purple);
 }
 
+
+
 .hero {
     position: relative;
     height: 100vh;
@@ -188,8 +191,7 @@ footer {
     justify-content: center;
     display: block;
     max-width: 100%;
-    margin: 0 auto;
-    margin-top: 0;
+    margin-bottom: 0;
 }
 
 footer p {

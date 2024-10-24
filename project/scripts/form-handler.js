@@ -1,25 +1,24 @@
-// Función para guardar el nombre en localStorage
 function saveName() {
-    const nameInput = document.getElementById('yourname').value; // Obtiene el valor del campo de nombre
+    const nameInput = document.getElementById('yourname').value; 
     if (nameInput) {
-        localStorage.setItem('userName', nameInput); // Almacena en localStorage
-        console.log('Nombre guardado:', nameInput);  // Verifica en la consola si el nombre se guarda
+        localStorage.setItem('userName', nameInput);  
+
+        console.log('Nombre guardado:', nameInput);  
     } else {
-        console.log('No se ingresó ningún nombre');  // Mensaje si no se ingresó un nombre
+        console.log('No se ingresó ningún nombre');   
     }
 }
 
-// Función para mostrar el nombre en la página de agradecimiento
+ 
 function displayName() {
-    const storedName = localStorage.getItem('userName'); // Obtiene el nombre desde localStorage
+    const storedName = localStorage.getItem('userName');  
     if (storedName) {
-        document.getElementById('name-display').textContent = storedName; // Muestra el nombre
-        console.log('Nombre desplegado:', storedName);  // Verifica en la consola si el nombre se muestra
+        document.getElementById('name-display').textContent = storedName;  
+        console.log('Nombre desplegado:', storedName);   
     } else {
-        console.log('No se encontró ningún nombre guardado');  // Mensaje si no hay nombre guardado
+        console.log('No se encontró ningún nombre guardado');   
     }
 }
 
-// Ejecuta displayName al cargar la página de agradecimiento
 document.addEventListener('DOMContentLoaded', displayName);
 
