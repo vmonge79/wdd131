@@ -1,6 +1,6 @@
 :root {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    --color-deep-purple: #3a2099;
+    --color-deep-purple: #3b287f;
     --color-light-purple: #633fe7;
     --color-royal-purple: #6A5ACD;
     --color-silver: #868585;
@@ -20,10 +20,9 @@ h1 {
     font-weight: bold;
     background-color: var(--color-deep-purple);
     color: white;
-    text-align: center;
-    text-align: center;
+    text-align: left;
     display: block;
-    margin: 0 auto;
+
     height: 3rem;
     margin-top: .6rem;
     padding-top: .5rem;
@@ -40,10 +39,143 @@ h2 {
 
 p {
     color: var(--color-silver);
-    font:narrow;
+    font: narrow;
     margin-bottom: .25rem;
 
 }
+
+header {
+    background-color: var(--color-deep-purple);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+}
+
+header h1 img {
+    max-width: 500px;
+    margin-right: 10px;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--color-deep-purple);
+    color: white;
+    cursor: pointer;
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+    background-color: rgb(54, 52, 52);
+}
+
+.navigation.show {
+    display: flex;
+
+}
+
+.navigation li {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    background-color: var(--color-deep-purple);
+}
+
+.navigation a:hover {
+    color: var(--color-royal-purple);
+    background-color: var(--color-deep-purple);
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;   
+
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(58, 32, 153, 0.7);
+    padding: 20px;
+    max-width: 1000px;
+    height: 300px;
+}
+
+.hero h1 {
+    background: none;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin:50px;
+    color: white;
+    text-align: center;
+}
+
+.hero-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--color-deep-purple);
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.hero-btn:hover {
+    font-size: 1.8rem;
+}
+
+
 
 footer {
     background-color: var(--color-deep-purple);
@@ -55,11 +187,147 @@ footer {
     display: block;
     max-width: viewport;
     margin: 0 auto;
-    margin-top: 1.5rem;
+    margin-top: 0;
 }
 
 footer p {
     margin: 1px 0px 2px 0px;
     text-align: center;
     color: white;
+}
+
+/* PORTFOLIO */
+
+/* SERVICES */
+
+/* CONTACT */
+
+form {
+    background-color: var(--color-lightgray);
+    color: var(--color-darkgray);
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+    margin-top: 125px;
+    text-align: center;
+    border: none;
+    background-color: var(--color-deep-purple);
+    color: white;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px --color-light-purple;
+    font-size: 1.35rem;
+    font-weight: bold;
+    display: block;
+    
+}
+
+form p{
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+
+.f1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.f1 legend {
+    color: var(--color-darkgray);
+    padding: 0 .5rem;
+}
+
+.f1 label {
+    display: block;
+    padding-top: .25rem;
+    color: var(--color-darkgray);
+    font-size: .9rem;
+}
+
+.f1 div {
+    padding-top: 1rem;
+}
+
+.f1 input[type="text"] {
+    display: block;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    height: 25px;
+
+}
+
+.f1 input[type="email"] {
+    display: block;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    height: 25px;
+
+}
+
+.f1 textarea {
+    display: block;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    height: 50px;
+    appearance: none;
+}
+
+.f1 input[type="submit"] {
+    border: none;
+    background-color: var(--color-deep-purple);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 200px;
+    box-shadow: 1px 1px 4px --color-light-purple;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.yourname,
+.email .check {
+    font-size: 1em;
+
+}
+
+.optional-text,
+.check {
+    font-size: 0.8em;
+    color: grey;
+}
+
+.name {
+    margin-top:-45px;
+}
+
+
+
+.f1 input[type="submit"]:hover {
+    box-shadow: 2px 2px 6px #666;
+    cursor: pointer;
+    text-shadow: #666;
+    font-size: 1.2rem;
+}
+
+/* FORM RESPONSE */
+
+.responseh1 {
+    line-height: 5rem;
 }
