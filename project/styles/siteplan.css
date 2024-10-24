@@ -32,9 +32,10 @@ h1 {
 }
 
 h2 {
-    color: var(--color-deep-purple);
+    color: white;
     margin-top: 1.5rem;
     margin-bottom: .75rem;
+    font-size: 3rem;
 }
 
 p {
@@ -67,6 +68,7 @@ header h1 {
 header h1 img {
     max-width: 500px;
     margin-right: 10px;
+
 }
 
 #menu {
@@ -227,6 +229,22 @@ footer p {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.btn-contact {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-contact .hero-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-deep-purple);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
 }
 
 .cards-container {
