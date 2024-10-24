@@ -361,7 +361,7 @@ form p {
     padding: .8rem;
     width: 96%;
     max-width: 200px;
-    box-shadow: 1px 1px 4px --color-light-purple;
+    box-shadow: 1px 1px 4px var(--color-light-purple);
     font-size: 1.25rem;
     font-weight: bold;
     display: block;
@@ -390,7 +390,7 @@ form p {
 .f1 input[type="submit"]:hover {
     box-shadow: 2px 2px 6px #686666;
     cursor: pointer;
-    text-shadow: #686666;
+    text-shadow: 1px 1px 2px #686666;
     font-size: 1.2rem;
 }
 
