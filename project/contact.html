@@ -38,15 +38,15 @@
             </nav>
         </div>
     </header>
-    <main>
-        
-        <form method="get" action="review.html" class="f1">
+    <main class="cont">
+
+        <form method="get" action="form-response.html" class="f1" onsubmit="showMessage(event)">
             <h1>Contact US</h1>
             <p>We are here to help!</p>
             <p>Please fill out the form below and we'll get back to you as soon as possible</p>
             <fieldset>
                 <div class="name">
-                    Name* 
+                    Name*
                     <input type="text" id="yourname" placeholder="Enter your name..." required>
                 </div>
                 <div>
@@ -57,23 +57,21 @@
                 <div id="select-service">
                     What service are you interested in?* <br>
                     <span class="check">(Check all that apply)</span>
-    
+
                     <label><input type="checkbox" name="customweb" value="yes" required>Custom Website</label>
                     <label><input type="checkbox" name="responsive" value="yes">Responsive Design</label>
                     <label><input type="checkbox" name="landing" value="yes">Landing Pages</label>
                 </div>
-    
+
                 <div class="written">
                     Other information you want us to know:<span class="optional-text">(Optional)</span>
                     <textarea id="written" placeholder="Write your comments here..." rows="5" cols="50"></textarea>
                 </div>
-    
+
                 <div id="button">
                     <input type="submit" value="Send my Request">
                 </div>
-                <div id="counterDisplay"></div>
-    
-    
+
             </fieldset>
         </form>
 

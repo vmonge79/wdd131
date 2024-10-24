@@ -1,10 +1,10 @@
 :root {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    --color-deep-purple: #3b287f;
+    --color-deep-purple: #190f3f;
     --color-light-purple: #633fe7;
     --color-royal-purple: #6A5ACD;
     --color-silver: #868585;
-    --color-white: #FFFFFF;
+    --color-turq: rgb(21, 92, 111);
 }
 
 * {
@@ -132,7 +132,7 @@ header h1 img {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;   
+    z-index: -1;
 
 }
 
@@ -141,10 +141,11 @@ header h1 img {
     color: white;
     text-align: center;
     z-index: 1;
-    background-color: rgba(58, 32, 153, 0.7);
+    background-color: rgba(21, 92, 111, 0.7);
     padding: 20px;
     max-width: 1000px;
     height: 300px;
+    border-radius: 10px;
 }
 
 .hero h1 {
@@ -156,7 +157,7 @@ header h1 img {
 
 .hero p {
     font-size: 1.5rem;
-    margin:50px;
+    margin: 50px;
     color: white;
     text-align: center;
 }
@@ -200,10 +201,77 @@ footer p {
 
 /* SERVICES */
 
+.serv,
+.port,
+.cont {
+    background: linear-gradient(to top right, var(--color-deep-purple), var(--color-turq));
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#services {
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+    margin-top: 40px;
+}
+
+#services img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--color-deep-purple);
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: var(--color-silver);
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
 /* CONTACT */
 
 form {
-    background-color: var(--color-lightgray);
+    background-color: white;
     color: var(--color-darkgray);
     max-width: 450px;
     display: block;
@@ -223,10 +291,10 @@ form h1 {
     font-size: 1.35rem;
     font-weight: bold;
     display: block;
-    
+
 }
 
-form p{
+form p {
     text-align: center;
     line-height: 1.5rem;
 }
@@ -314,7 +382,7 @@ form p{
 }
 
 .name {
-    margin-top:-45px;
+    margin-top: -45px;
 }
 
 
@@ -330,4 +398,10 @@ form p{
 
 .responseh1 {
     line-height: 5rem;
+}
+
+.name-input {
+    margin-top: 20px;
+    font-size: 24px;
+    color: white;
 }
