@@ -1,0 +1,100 @@
+@media (orientation: landscape) {
+    body {
+            min-height: 100vh;
+        }
+    
+        footer {
+            flex-shrink: 0;
+        }
+    
+        /* SERVICES */
+    
+        #services main {
+            flex-direction: row;
+            flex-grow: 1;
+            overflow: hidden;
+        }
+    
+        #services footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    
+        .card h3 {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            text-align: center;
+            color: var(--color-deep-purple);
+        }
+    
+        .card p {
+            font-size: 0.7rem;
+            color: var(--color-silver);
+            text-align: center;
+        }
+    
+        .card img {
+            height: 95px;
+            width: 95px;
+        }
+    
+        /* CONTACT */
+    
+        form {
+            background-color: white;
+            color: var(--color-darkgray);
+            max-width: 450px;
+            display: block;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        form h1 {
+            margin-top: 100px;
+            font-size: 1rem;
+            line-height: 1rem;
+
+    
+        }
+    
+        form p {
+            font-size: 0.80rem;
+            line-height: 1rem;
+        }
+    
+    
+    
+        .f1 input[type="submit"] {
+            font-size: 0.7rem;
+            max-width: 125px;
+            margin-top: 5%;
+    
+        }
+    
+        .yourname,
+        .email .check {
+            font-size: 0.7rem;
+    
+        }
+    
+        .optional-text,
+        .check {
+            font-size: 0.6rem;
+            color: grey;
+        }
+    
+        /* FORM RESPONSE */
+    
+        .responseh1 {
+            line-height: 3rem;
+            margin-top: -2rem;
+            font-size: 18px;
+        }
+    
+        .name-input {
+            margin-top: 18px;
+            font-size: 20px;
+        }
+    }

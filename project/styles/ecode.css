@@ -208,7 +208,7 @@ footer p {
 .port,
 .cont {
     background: linear-gradient(to top right, var(--color-deep-purple), var(--color-turq));
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 20px;
 }
